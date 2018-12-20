@@ -15,6 +15,7 @@
 		5C8F210821CBD97C007F700F /* CoreLocationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F210721CBD97C007F700F /* CoreLocationDemoTests.swift */; };
 		5C8F211321CBD97C007F700F /* CoreLocationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F211221CBD97C007F700F /* CoreLocationDemoUITests.swift */; };
 		5C8F212221CBDD28007F700F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F212121CBDD28007F700F /* LocationManager.swift */; };
+		C59B76A021CC37E400860C9F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B769F21CC37E400860C9F /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5C8F211221CBD97C007F700F /* CoreLocationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationDemoUITests.swift; sourceTree = "<group>"; };
 		5C8F211421CBD97C007F700F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C8F212121CBDD28007F700F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C59B769F21CC37E400860C9F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5C8F20FB21CBD97C007F700F /* LaunchScreen.storyboard */,
 				5C8F20FE21CBD97C007F700F /* Info.plist */,
 				5C8F212121CBDD28007F700F /* LocationManager.swift */,
+				C59B769F21CC37E400860C9F /* MapViewController.swift */,
 			);
 			path = CoreLocationDemo;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				5C8F20F521CBD97A007F700F /* ViewController.swift in Sources */,
 				5C8F20F321CBD979007F700F /* AppDelegate.swift in Sources */,
 				5C8F212221CBDD28007F700F /* LocationManager.swift in Sources */,
+				C59B76A021CC37E400860C9F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
