@@ -7,14 +7,41 @@
 //
 
 import UIKit
+import CoreLocation
+
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - Outlets
+    
+    @IBAction func locationButtonPressed(_ sender: Any) {
+        LocationManager.shared.getLastLocation { (optionalPlacemark) in
+            if let placemark = optionalPlacemark, let city = placemark.locality {
+                self.showAlert(with: "This is where you are!", and: city)
+            }
+        }
+        // save in variable to allow easy access to display
+        // Display location
+    }
+    
+    // MARK: = Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        LocationManager.shared.setUpCLManager()
     }
-
-
+    
+    
+    // MARK: - Helper functions
+    private func showAlert(with message: String, and title: String) {
+        // create alert controller
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 }
 
