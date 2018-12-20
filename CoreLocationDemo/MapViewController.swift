@@ -15,13 +15,21 @@ class MapViewController: UIViewController {
     
     var placemark: CLPlacemark?
     let regionRadius: CLLocationDistance = 1000
+    var location: CLLocation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let location = placemark?.location
-        centerMapOnLocation(location: location!)
-        addUserAnnotation(location: location!)
+        guard let secureLocation = location else {
+            return
+        }
+        
+        centerMapOnLocation(location: secureLocation)
+        addUserAnnotation(location: secureLocation)
+    }
+    
+    func setupMap(placemark: CLPlacemark) {
+        self.location = placemark.location
     }
     
     func addUserAnnotation(location: CLLocation) {

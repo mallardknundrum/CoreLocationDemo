@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! MapViewController
-        destination.placemark = sender as? CLPlacemark
+        destination.setupMap(placemark: sender as! CLPlacemark)
     }
     
     
