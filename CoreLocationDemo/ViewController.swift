@@ -38,8 +38,13 @@ class ViewController: UIViewController {
         // create alert controller
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let viewMap = UIAlertAction(title: "View Map", style: .default, handler: { (action) -> Void in
+            self.performSegue(withIdentifier: "MapKitController", sender: self)
+            
+        })
         
         alertController.addAction(okAction)
+        alertController.addAction(viewMap)
         self.present(alertController, animated: true, completion: nil)
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0426617E21CC981800DA1C69 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426617D21CC981800DA1C69 /* MapKitViewController.swift */; };
 		5C8F20F321CBD979007F700F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F20F221CBD979007F700F /* AppDelegate.swift */; };
 		5C8F20F521CBD97A007F700F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F20F421CBD97A007F700F /* ViewController.swift */; };
 		5C8F20F821CBD97A007F700F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F20F621CBD97A007F700F /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0426617D21CC981800DA1C69 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		5C8F20EF21CBD979007F700F /* CoreLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8F20F221CBD979007F700F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C8F20F421CBD97A007F700F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				5C8F20FB21CBD97C007F700F /* LaunchScreen.storyboard */,
 				5C8F20FE21CBD97C007F700F /* Info.plist */,
 				5C8F212121CBDD28007F700F /* LocationManager.swift */,
+				0426617D21CC981800DA1C69 /* MapKitViewController.swift */,
 			);
 			path = CoreLocationDemo;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				5C8F20F521CBD97A007F700F /* ViewController.swift in Sources */,
 				5C8F20F321CBD979007F700F /* AppDelegate.swift in Sources */,
+				0426617E21CC981800DA1C69 /* MapKitViewController.swift in Sources */,
 				5C8F212221CBDD28007F700F /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
