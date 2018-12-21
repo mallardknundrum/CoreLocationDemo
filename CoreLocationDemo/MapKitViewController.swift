@@ -11,7 +11,7 @@ import MapKit
 
 class MapKitViewController: UIViewController {
     var initialLocation: CLLocation?
-    let regionRadius : CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 1000
     let annotation = MKPointAnnotation()
 
     //MARK: Outlets
@@ -26,12 +26,15 @@ class MapKitViewController: UIViewController {
 
             let placemark = optionalPlacemark
 
-            let getLatitud = placemark?.location?.coordinate.latitude
-            let getLongitud = placemark?.location?.coordinate.longitude
+            // Coordinates
+            guard let latitud = placemark?.location?.coordinate.latitude else { return }
+            guard let longitud = placemark?.location?.coordinate.longitude else { return }
 
-            self.initialLocation = CLLocation(latitude: getLatitud!, longitude: getLongitud!)
+            // Actual Location
+            self.initialLocation = CLLocation(latitude: latitud, longitude: longitud)
 
-            self.annotation.coordinate = CLLocationCoordinate2D(latitude: getLatitud!, longitude: getLongitud!)
+            // Setting the Point Location
+            self.annotation.coordinate = CLLocationCoordinate2D(latitude: latitud, longitude: longitud)
             self.centerMapOnLocation(location: self.initialLocation!)
             self.mapView.addAnnotation(self.annotation)
         }
