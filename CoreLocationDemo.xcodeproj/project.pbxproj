@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DD3F68021CCD0BE008792B7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3F67F21CCD0BE008792B7 /* MapViewController.swift */; };
 		5C8F20F321CBD979007F700F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F20F221CBD979007F700F /* AppDelegate.swift */; };
 		5C8F20F521CBD97A007F700F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F20F421CBD97A007F700F /* ViewController.swift */; };
 		5C8F20F821CBD97A007F700F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F20F621CBD97A007F700F /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DD3F67F21CCD0BE008792B7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5C8F20EF21CBD979007F700F /* CoreLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8F20F221CBD979007F700F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C8F20F421CBD97A007F700F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				5C8F20F221CBD979007F700F /* AppDelegate.swift */,
 				5C8F20F421CBD97A007F700F /* ViewController.swift */,
+				3DD3F67F21CCD0BE008792B7 /* MapViewController.swift */,
 				5C8F20F621CBD97A007F700F /* Main.storyboard */,
 				5C8F20F921CBD97C007F700F /* Assets.xcassets */,
 				5C8F20FB21CBD97C007F700F /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				5C8F20F521CBD97A007F700F /* ViewController.swift in Sources */,
 				5C8F20F321CBD979007F700F /* AppDelegate.swift in Sources */,
 				5C8F212221CBDD28007F700F /* LocationManager.swift in Sources */,
+				3DD3F68021CCD0BE008792B7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

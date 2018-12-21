@@ -38,9 +38,14 @@ class ViewController: UIViewController {
         // create alert controller
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
+        let goMapAction = UIAlertAction(title: "Go to map", style: .default, handler: actionHandler)
         alertController.addAction(okAction)
+        alertController.addAction(goMapAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func actionHandler(alert: UIAlertAction){
+        performSegue(withIdentifier: "showMap", sender: nil)
     }
     
 }
